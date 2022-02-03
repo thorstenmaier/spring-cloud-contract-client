@@ -18,3 +18,4 @@
 * Use wiremock for mocking the service in `CustomerClientTest`
 * This does work, but only until the interface of the service changes
 * Go back to service and implement contract based testing
+* Come back here and use `@AutoConfigureStubRunner(ids = "com.trivadis:spring-cloud-contract-service:+:8080", stubsMode = StubRunnerProperties.StubsMode.LOCAL)` for test
