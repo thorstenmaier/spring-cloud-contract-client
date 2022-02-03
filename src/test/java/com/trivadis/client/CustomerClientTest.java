@@ -13,6 +13,6 @@ class CustomerClientTest {
 
     @Test
     public void clientShouldReturnAllCustomers() {
-        BDDAssertions.then(this.customerClient.getAllCustomers()).size().isEqualTo(0);
+        BDDAssertions.then(this.customerClient.getAllCustomers()).size().isEqualTo(2);
     }
 }
