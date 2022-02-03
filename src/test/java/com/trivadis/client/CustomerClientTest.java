@@ -17,5 +17,6 @@ class CustomerClientTest {
     @Test
     public void clientShouldReturnAllCustomers() {
         BDDAssertions.then(this.customerClient.getAllCustomers()).size().isEqualTo(1);
+        BDDAssertions.then(this.customerClient.getAllCustomers().iterator().next().getName()).isEqualTo("Thorsten");
     }
 }
